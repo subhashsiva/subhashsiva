@@ -5,11 +5,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-const homepage = () => {
+const Homepage = () => {
   const router = useRouter();
+
   const HandleClick = () => {
     router.push("/contact");
   };
+
   return (
     <div className="bg-black w-screen h-screen text-white ">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-10 md:pt-37">
@@ -53,4 +55,4 @@ const homepage = () => {
   );
 };
 
-export default homepage;
+export default Homepage;
