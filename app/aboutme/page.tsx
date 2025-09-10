@@ -8,9 +8,10 @@ const AboutPage = () => {
   return (
     <div className="w-screen min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-center p-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl items-center">
+        {/* Image Section - Animate from Bottom */}
         <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex justify-center"
         >
@@ -23,9 +24,10 @@ const AboutPage = () => {
           />
         </motion.div>
 
+        {/* Text Section - Animate from Bottom */}
         <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="text-lg leading-relaxed text-slate-300 "
         >

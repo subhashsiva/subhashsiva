@@ -16,8 +16,8 @@ const Homepage = () => {
     <div className="bg-black w-screen h-screen text-white ">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-10 md:pt-37">
         <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="w-lg h-96 bg-black flex-row items-center justify-between gap-4"
         >
@@ -31,8 +31,8 @@ const Homepage = () => {
         </motion.div>
 
         <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="w-lg h-96 bg-black flex-row items-center justify-center pl-25 pt-15 mt-9 md:"
         >
