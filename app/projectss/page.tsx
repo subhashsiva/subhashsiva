@@ -41,7 +41,7 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="w-full h-screen bg-black">
+    <div className="w-full min-h-screen bg-black">
       <div className=" text-white py-16 px-8">
         <h1 className="text-4xl font-bold text-center mb-12 text-green-400">
           My Projects
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
         </h1>
 
         <div className="flex items-center justify-center">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 size-8/12 items-center justify-center">
+          <div className=" grid gap-8 grid-cols-1 md:grid-cols-2">
             {nptels.map((project, index) => (
               <Card
                 key={index}
