@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 
 const Homepage = () => {
   const router = useRouter();
@@ -13,8 +14,8 @@ const Homepage = () => {
   };
 
   return (
-    <div className="bg-black w-screen h-screen text-white ">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-10 md:pt-37">
+    <div className="bg-black w-screen h-screen text-white flex flex-col justify-center items-center">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-10 md:pt-25">
         <motion.div
           initial={{ y: 200, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -34,7 +35,7 @@ const Homepage = () => {
           initial={{ y: 200, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-lg h-96 bg-black flex-row items-center justify-center pl-25 pt-15 mt-9 md:"
+          className="w-lg h-96 bg-black flex flex-col items-center justify-center pl-25 pt-15 mt-9"
         >
           <p className="flex pt-15 ">HI! THERE</p>
           <h2 className="font-bold text-4xl text-green-500 pt-2">
@@ -50,6 +51,39 @@ const Homepage = () => {
             </Button>
           </div>
         </motion.div>
+      </div>
+
+      {/* Social Icons */}
+
+      <div className="flex space-x-6 mt-30">
+        <a
+          href="https://www.instagram.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className="text-pink-500 text-3xl hover:scale-110 transition-transform duration-300" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="text-blue-500 text-3xl hover:scale-110 transition-transform duration-300" />
+        </a>
+        <a
+          href="https://wa.me/yourphonenumber"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="text-green-500 text-3xl hover:scale-110 transition-transform duration-300" />
+        </a>
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="text-gray-300 text-3xl hover:scale-110 transition-transform duration-300" />
+        </a>
       </div>
     </div>
   );
