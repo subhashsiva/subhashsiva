@@ -36,7 +36,7 @@ export const MainNav = () => {
             href={route.href}
             key={route.href}
             className={cn(
-              "relative font-medium after:absolute after:left-1/2 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-green-500 after:transition-all after:duration-500 after:-translate-x-1/2",
+              "relative font-medium after:absolute after:left-1/2 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-[#1CE3D8] after:transition-all after:duration-500 after:-translate-x-1/2",
               route.active && "after:w-full"
             )}
           >
